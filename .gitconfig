@@ -11,3 +11,6 @@
 	keepBackup = false
 [difftool "diffmerge"]
 	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[user]
+	email = me@stefanpuehringer.com
+	name = Stefan Puehringer
