@@ -1,0 +1,13 @@
+[core]
+	excludesfile = ~/.gitignore
+[diff]
+	tool = diffmerge
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	trustExitCode = true
+[mergetool]
+	keepBackup = false
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
